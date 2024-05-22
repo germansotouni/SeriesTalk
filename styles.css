@@ -1,0 +1,224 @@
+/* Variables de colores */
+:root {
+    --primary-color: #ffcb05;
+    --secondary-color: #b0b0b0;
+    --background-color: #121212;
+    --nav-background-color: #151515;
+    --card-background-color: #1e1e1e;
+    --text-color: #e0e0e0;
+    --highlight-color: #ffcb05;
+    --button-hover-color: #ff4d4d;
+    --font-family: 'Roboto', sans-serif;
+}
+
+/* Reseteo de estilos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del logotipo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Estilos del menú de navegación */
+nav {
+    background-color: var(--nav-background-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: var(--secondary-color);
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Índice */
+#Índice h3 {
+    margin: 0 auto;
+    width: 50%;
+}
+
+#indice ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: var(--nav-background-color);
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+#indice ul li {
+    margin: 2rem 0;
+}
+
+#indice ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#indice ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Estilos de las tarjetas */
+section {
+    background-color: var(--card-background-color);
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+section img {
+    display: block;
+    margin: 1rem auto;
+}
+
+section button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section ul, section ol {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+section li {
+    margin-bottom: 0.5rem;
+}
+
+/* Colores específicos por serie */
+#Serie1 {
+    border-left: 5px solid #ff0000;
+}
+
+#Serie1 h3,
+#Serie1 button,
+#Serie1 a.more-info:hover {
+    color: #ff0000;
+}
+
+#Serie1 button {
+    background-color: #ff0000;
+    color: white;
+}
+
+#Serie1 button:hover {
+    background-color: var(--button-hover-color);
+    color: white;
+}
+
+#Serie2 {
+    border-left: 5px solid #ff9800;
+}
+
+#Serie2 h3,
+#Serie2 button,
+#Serie2 a.more-info:hover {
+    color: #ff9800;
+}
+
+#Serie2 button {
+    background-color: #ff9800;
+    color: white;
+}
+
+#Serie2 button:hover {
+    background-color: #ffc107;
+    color: white;
+}
+
+#Serie3 {
+    border-left: 5px solid #000000;
+}
+
+#Serie3 h3,
+#Serie3 button,
+#Serie3 a.more-info:hover {
+    color: #000000;
+}
+
+#Serie3 button {
+    background-color: #000000;
+    color: white;
+}
+
+#Serie3 button:hover {
+    background-color: #333333;
+    color: white;
+}
+
+#Serie4 {
+    border-left: 5px solid #ff0000;
+}
+
+#Serie4 h3,
+#Serie4 button,
+#Serie4 a.more-info:hover {
+    color: #ff0000;
+}
+
+#Serie4 button {
+    background-color: #ff0000;
+    color: white;
+}
+
+#Serie4 button:hover {
+    background-color: var(--button-hover-color);
+    color: white;
+}
+
+/* Enlaces generales */
+a {
+    color: #1a73e8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--highlight-color);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctame</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <img src="images/logo-no-background.png" alt="SeriesTalk Logo" width="400" height="auto">
+    </div>
+</header>
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="SobreMi.html">Sobre Mí</a>
+</nav>
+<main>
+    <section id="contactame" class="centrado">
+        <h1>Contáctame</h1>
+        <p>Si deseas ponerte en contacto conmigo, puedes hacerlo a través del siguiente formulario. Ya sea para compartir tus opiniones sobre una serie, sugerir una nueva serie para reseñar, o simplemente para saludar, estaré encantado de recibir tus mensajes.</p>
+        <form action="mailto:tuemail@ejemplo.com" method="post" enctype="text/plain">
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</main>
+
+</body>
+</html>
